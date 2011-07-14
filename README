@@ -1,0 +1,12 @@
+This is the repository of the source code behind http://maps.vicchi.org. It can be found at http://github.com/vicchi/maps-api-demos
+
+INSTALLING
+
+The demos assume that local installations of YUI, Prettify and Mapstraction are installed and
+accessible from your web server's root directory as follows :-
+
+/			Web server's root
+/mxn		Mapstraction; see http://mapstraction.com/
+/prettify	Prettify; see http://code.google.com/p/google-code-prettify/
+/yui		YUI; see http://developer.yahoo.com/yui/
+
