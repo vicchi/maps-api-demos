@@ -25,6 +25,20 @@ function doHeader($demo_prefix, $use_mxn=FALSE) {
 	print "<script type=\"text/javascript\" src=\"/prettify/src/prettify.js\"></script>\n";
 	print "<script type=\"text/javascript\" src=\"/" . $demo_prefix . ".js\"></script>\n";
 	print "<script type=\"text/javascript\" src=\"/functions.js\"></script>\n";
+	print "<!-- Google Analytics asynchronous tracking code -->"
+	print "<script type=\"text/javascript\">\n";
+	print "	var _gaq = _gaq || [];\n";
+	print "	_gaq.push(['_setAccount', 'UA-10486552-1']);\n";
+	print "	_gaq.push(['_setDomainName', '.vicchi.org']);\n";
+	print "	_gaq.push(['_setAllowHash', false]);\n";
+	print "	_gaq.push(['_trackPageview']);\n";
+	print "\n";
+	print "	(function() {\n";
+	print "		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n";
+	print "		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n";
+	print "			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n";
+	print "	})();\n";
+	print "	</script>\n";
 }
 
 function doFooter($use_mxn=FALSE) {
