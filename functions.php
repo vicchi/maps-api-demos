@@ -20,12 +20,12 @@ function doHeader($demo_prefix, $use_mxn=FALSE) {
 	print "<link rel=\"stylesheet\" href=\"/prettify/src/prettify.css\" type=\"text/css\" />\n";
 	print "<script type=\"text/javascript\" src=\"http://api.maps.ovi.com/jsl.js\" charset=\"utf-8\"></script>\n";
 	if ($use_mxn) {
-		print "<script type=\"text/javascript\" src=\"/mxn/build/mxn.js?(ovi)\"></script>\n";
+		print "<script type=\"text/javascript\" src=\"/mxn/build/mxn.js?(ovi,[geocoder])\"></script>\n";
 	}
 	print "<script type=\"text/javascript\" src=\"/prettify/src/prettify.js\"></script>\n";
 	print "<script type=\"text/javascript\" src=\"/" . $demo_prefix . ".js\"></script>\n";
 	print "<script type=\"text/javascript\" src=\"/functions.js\"></script>\n";
-	print "<!-- Google Analytics asynchronous tracking code -->"
+	print "<!-- Google Analytics asynchronous tracking code -->\n";
 	print "<script type=\"text/javascript\">\n";
 	print "	var _gaq = _gaq || [];\n";
 	print "	_gaq.push(['_setAccount', 'UA-10486552-1']);\n";
